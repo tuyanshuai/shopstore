@@ -1,6 +1,6 @@
-# Magnetica 冰箱贴独立站
+# TimberPlay 木质拼装玩具独立站
 
-一个面向定制和礼品场景的冰箱贴独立站 Demo，包含：
+一个面向北美家庭、STEM 玩具和礼品场景的 wood puzzle 创意木质玩具独立站 Demo，包含：
 
 - Python 标准库后端 API
 - 原生 HTML/CSS/JavaScript 前端

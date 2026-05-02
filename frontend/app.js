@@ -41,7 +41,7 @@ function renderThemeOptions(themes) {
 function renderProducts() {
   productGrid.innerHTML = "";
   if (state.products.length === 0) {
-    productGrid.innerHTML = '<p class="empty">没有找到匹配的冰箱贴，试试其他关键词。</p>';
+    productGrid.innerHTML = '<p class="empty">没有找到匹配的木质玩具，试试 pinball、marble run 或 arcade。</p>';
     return;
   }
 
@@ -54,7 +54,7 @@ function renderProducts() {
       <h3>${product.name}</h3>
       <p>${product.description}</p>
       <div class="product-meta">
-        <strong>¥${product.price}</strong>
+        <strong>$${product.price}</strong>
         <span>${product.theme}</span>
       </div>
       <button data-product-id="${product.id}">加入购物车</button>
@@ -113,9 +113,9 @@ function renderCart() {
   });
 
   if (Object.keys(state.cart).length === 0) {
-    cartItems.innerHTML = '<p class="muted">购物车还是空的，先挑几款喜欢的吧。</p>';
+    cartItems.innerHTML = '<p class="muted">购物车还是空的，先挑一款适合亲子共建或礼物场景的木质玩具吧。</p>';
   }
-  cartTotal.textContent = `¥${total}`;
+  cartTotal.textContent = `$${total}`;
 }
 
 orderForm.addEventListener("submit", async (event) => {

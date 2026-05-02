@@ -20,7 +20,7 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  background: linear-gradient(180deg, #fff8e7 0%, #ffffff 48%, #f4fbff 100%);
+  background: linear-gradient(180deg, #fff6e8 0%, #ffffff 48%, #f1f7ee 100%);
   font-family: Inter, "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
 }
 
@@ -154,20 +154,22 @@ a {
   border-radius: 36px;
   background:
     radial-gradient(circle at top right, rgba(255, 122, 61, 0.22), transparent 34%),
-    linear-gradient(135deg, #eff7ff, #ffffff);
+    linear-gradient(135deg, #f7ead8, #ffffff);
   box-shadow: var(--shadow);
   padding: 32px;
   text-align: center;
 }
 
-.magnet-preview {
+.wood-toy-preview {
   display: grid;
   place-items: center;
   width: min(280px, 70%);
   aspect-ratio: 1.18;
   margin-bottom: 24px;
   border-radius: 32px;
-  background: linear-gradient(135deg, #ffe2a8, #ffd9e2);
+  background:
+    linear-gradient(135deg, rgba(143, 92, 49, 0.22), rgba(255, 226, 168, 0.92)),
+    repeating-linear-gradient(90deg, rgba(143, 92, 49, 0.18) 0 2px, transparent 2px 18px);
   box-shadow: 0 22px 38px rgba(32, 36, 42, 0.15);
   font-size: clamp(36px, 6vw, 62px);
   font-weight: 900;
