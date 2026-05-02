@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Magnetica 冰箱贴独立站</title>
+    <meta
+      name="description"
+      content="Magnetica 提供原创与定制冰箱贴，适合作为旅行纪念、婚礼回礼、宠物周边和厨房装饰。"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#top">Magnetica</a>
+        <div class="nav-links">
+          <a href="#products">商品</a>
+          <a href="#custom">定制</a>
+          <a href="#story">品牌</a>
+          <a href="#checkout">下单</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">原创冰箱贴 / 小批量定制 / 礼品套装</p>
+          <h1>把每一次旅行、纪念日和生活灵感贴在冰箱上。</h1>
+          <p class="hero-text">
+            Magnetica 为年轻家庭、旅行爱好者和礼品采购者提供高颜值冰箱贴。
+            支持照片定制、企业活动款和节日礼盒，最快 72 小时出设计稿。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#products">立即选购</a>
+            <a class="button secondary" href="#custom">了解定制流程</a>
+          </div>
+          <div class="hero-stats" aria-label="品牌数据">
+            <span><strong>4.9/5</strong> 买家评分</span>
+            <span><strong>72h</strong> 定制打样</span>
+            <span><strong>199+</strong> 包邮</span>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="主推商品展示">
+          <div class="magnet-preview">城市<br />记忆</div>
+          <p>新品：城市明信片系列</p>
+          <strong>首单立减 10%</strong>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="服务承诺">
+        <span>环保软磁材料</span>
+        <span>原创插画授权</span>
+        <span>企业礼品可开票</span>
+        <span>破损补发保障</span>
+      </section>
+
+      <section id="products" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">精选商品</p>
+          <h2>从纪念品到礼物，都能找到合适的一枚。</h2>
+        </div>
+        <div class="catalog-toolbar">
+          <input id="searchInput" type="search" placeholder="搜索旅行、宠物、婚礼..." />
+          <select id="themeFilter" aria-label="按主题筛选">
+            <option value="">全部主题</option>
+          </select>
+        </div>
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="custom" class="section split-section">
+        <div>
+          <p class="eyebrow">定制服务</p>
+          <h2>三步做出专属冰箱贴。</h2>
+          <ol class="steps">
+            <li><strong>提交素材：</strong>上传照片、日期、品牌元素或活动主题。</li>
+            <li><strong>确认设计：</strong>设计师排版，提供 1 次免费修改。</li>
+            <li><strong>生产发货：</strong>确认后排产，支持礼盒包装和批量寄送。</li>
+          </ol>
+        </div>
+        <form id="newsletterForm" class="card form-card">
+          <h3>领取定制报价模板</h3>
+          <p>留下邮箱，获取首单优惠码和节日礼盒报价表。</p>
+          <label>
+            邮箱
+            <input name="email" type="email" placeholder="you@example.com" required />
+          </label>
+          <button class="button primary" type="submit">获取资料</button>
+          <p id="newsletterMessage" class="form-message" role="status"></p>
+        </form>
+      </section>
+
+      <section id="story" class="section story">
+        <p class="eyebrow">品牌故事</p>
+        <h2>一枚小贴纸，也可以成为长期被看见的情绪价值。</h2>
+        <p>
+          我们围绕“可收藏、可赠送、可定制”设计产品线，让冰箱贴从旅游纪念品延展到婚礼回礼、
+          宠物周边、企业伴手礼和家居软装。独立站承接内容种草、私域复购与定制询盘。
+        </p>
+      </section>
+
+      <section id="checkout" class="section checkout-section">
+        <div class="section-heading">
+          <p class="eyebrow">购物车</p>
+          <h2>确认商品后提交订单。</h2>
+        </div>
+        <div class="checkout-layout">
+          <div class="card">
+            <h3>已选商品</h3>
+            <div id="cartList" class="cart-list"></div>
+            <p class="cart-total">合计：<strong id="cartTotal">¥0</strong></p>
+          </div>
+          <form id="orderForm" class="card form-card">
+            <h3>收货信息</h3>
+            <label>
+              姓名
+              <input name="name" required placeholder="张三" />
+            </label>
+            <label>
+              电话
+              <input name="phone" required placeholder="13800000000" />
+            </label>
+            <label>
+              地址
+              <textarea name="address" required placeholder="省市区 + 详细地址"></textarea>
+            </label>
+            <button class="button primary" type="submit">提交订单</button>
+            <p id="orderMessage" class="form-message" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Magnetica 冰箱贴独立站</p>
+      <p>客服邮箱：hello@magnetica.example</p>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
