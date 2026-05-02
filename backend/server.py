@@ -7,7 +7,7 @@ from urllib.parse import parse_qs, urlparse
 from store import create_order, filter_products, subscribe_newsletter
 
 ROOT = Path(__file__).resolve().parents[1]
-FRONTEND_DIR = ROOT / "frontend"
+FRONTEND_DIR = ROOT
 
 
 def json_response(handler, payload, status=200):

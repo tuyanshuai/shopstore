@@ -48,6 +48,9 @@ https://你的项目名.vercel.app
 
 ```text
 api/*.py                Vercel serverless API
+index.html             Vercel 静态首页入口
+styles.css             Vercel 静态样式入口
+app.js                 Vercel 静态脚本入口
 backend/server.py       后端 API 与静态资源服务
 backend/store.py        商品、订阅、订单共享业务逻辑
 frontend/index.html     独立站页面
