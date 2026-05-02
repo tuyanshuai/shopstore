@@ -263,6 +263,20 @@ a {
   line-height: 1.65;
 }
 
+.product-science {
+  display: grid;
+  gap: 8px;
+  border-radius: 18px;
+  background: #fff8e7;
+  padding: 12px;
+}
+
+.product-science span {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .product-meta {
   display: flex;
   align-items: center;

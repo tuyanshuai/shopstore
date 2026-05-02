@@ -1,6 +1,6 @@
 # TimberPlay 木质拼装玩具独立站
 
-一个面向北美家庭、STEM 玩具和礼品场景的 wood puzzle 创意木质玩具独立站 Demo，包含：
+一个面向北美家庭、STEM 玩具和礼品场景的 wood puzzle 创意木质机械实验玩具独立站 Demo，强调“机制驱动乐趣”和“可观察的科学现象”，包含：
 
 - Python 标准库后端 API
 - 原生 HTML/CSS/JavaScript 前端

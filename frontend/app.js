@@ -53,6 +53,10 @@ function renderProducts() {
       <span class="tag">${product.tag}</span>
       <h3>${product.name}</h3>
       <p>${product.description}</p>
+      <div class="science-note">
+        <strong>机制：</strong>${product.mechanism}<br />
+        <strong>实验问题：</strong>${product.experiment}
+      </div>
       <div class="product-meta">
         <strong>$${product.price}</strong>
         <span>${product.theme}</span>
